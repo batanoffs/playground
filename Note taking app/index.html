@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Note taking App</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="page-container">
+            <div class="title-container">
+                <h1>Note-Taking App</h1>
+            </div>
+            <div id="form-container">
+                <form id="note-form">
+                    <label for="note-textarea">Enter your note here</label>
+                    <textarea
+                        name="textarea"
+                        id="note-textarea"
+                        required=""
+                    ></textarea>
+                    <button id="create-note-button">Add Note</button>
+                </form>
+            </div>
+            <div id="notes-container">
+                <div id="notes-list">
+                    <div id="empty-note" class="note" style="float: left">
+                        <div>
+                            <p class="note-title">No notes created yet!</p>
+                        </div>
+                        <div>
+                            <p class="note-text">
+                                Create your first note above!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
