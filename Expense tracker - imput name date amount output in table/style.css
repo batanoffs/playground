@@ -1,0 +1,112 @@
+/* Reset default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Center the container */
+#container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Add this property */
+}
+
+/* Style the heading and form elements */
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #007bff;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; 
+}
+
+/* Style the button */
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Style the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    #container {
+        padding: 10px;
+    }
+    input[type="text"],
+    input[type="date"],
+    input[type="number"] {
+        padding: 8px;
+    }
+    th, td {
+        padding: 8px;
+    }
+}
+
+/* Update the CSS for the "Delete" button */
+button.delete-button {
+    background-color: #ff4242; /* Red background color */
+    color: #fff; /* White text color */
+    border: 1px solid #ccc;
+    width: fit-content;
+    border-radius: 0px;
+    padding: auto auto; /* Adjust the padding to make the button same width as the row */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+
+button.delete-button:hover {
+    background-color: #a20000; /* Darker red on hover */
+}
