@@ -1,0 +1,45 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vowel Counter App</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Vowel Counter App</h1>
+        </header>
+        <main>
+            <label for="text">Enter a text: </label>
+            <input type="text" id="text" aria-label="Text input" />
+            <button onclick="countVowels()">Count Vowels</button>
+            <button onclick="clearText()">Clear</button>
+
+            <div id="result" aria-live="polite" style="display: none">
+                Total vowels in the text: <span id="vowelCount">0</span>
+            </div>
+        </main>
+        <aside id="about-help">
+            <h2>About/Help</h2>
+            <p>
+                This is a simple app that counts the number of vowels in the
+                input text. Enter your text, click the "Count Vowels" button,
+                and the app will show you the count of vowels.
+            </p>
+        </aside>
+        <aside id="feedback">
+            <h2>Feedback</h2>
+            <!-- Add a feedback form or section here -->
+        </aside>
+        <aside id="share-save">
+            <h2>Share/Save Results</h2>
+            <!-- Add sharing and saving functionality here -->
+        </aside>
+
+        <footer>
+            <p>&copy; 2023 Batanoff Vowel Counter App</p>
+        </footer>
+
+        <script src="app.js"></script>
+    </body>
+</html>
